@@ -14,6 +14,6 @@ Vagrant.configure("2") do |config|
     apt-get update
     apt-get install -y esl-erlang git
     git clone https://github.com/elixir-lang/elixir.git
-    cd elixir && make && make install
+    cd elixir && git checkout v1.4.1 && make && make install
   SHELL
 end
