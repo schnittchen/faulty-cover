@@ -28,6 +28,8 @@ defmodule Foo.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:cobertura_cover, "~> 0.9.0", only: :test}
+    ]
   end
 end
